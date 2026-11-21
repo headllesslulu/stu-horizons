@@ -22,7 +22,7 @@ This comparison concerns stationary states at fixed total conserved quantities. 
 
 ## Proof
 
-The sum of the two input energy vectors need not share a single Kerr seed across the four charge slots. At fixed total mass and fixed individual charges, the common-seed equilibrium maximizes each of the two quantities $L$ and $R$ entering $S_+=2\pi(L+\sqrt{R^2-J^2})$. Pairing slots in the pooled vector yields positive cross terms of at least $2m_Xm_Y$ in each of $L$ and $R$. Cauchy–Schwarz carries the second gain through the rotation term. This establishes the inequality throughout the family. [Five-page proof](paper/STU_Horizon_Entropy.pdf) · [LaTeX source](paper/STU_Horizon_Entropy.tex)
+The sum of the two input energy vectors need not share a single Kerr seed across the four charge slots. At fixed total mass and fixed individual charges, the common-seed equilibrium maximizes each of the two quantities $L$ and $R$ entering $S_+=2\pi(L+\sqrt{R^2-J^2})$. Pairing slots in the pooled vector yields positive cross terms of at least $2m_Xm_Y$ in each of $L$ and $R$. Cauchy–Schwarz carries the second gain through the rotation term. This establishes the inequality throughout the family. 
 
 | Result | Lean declaration in `STUHorizons` |
 | --- | --- |
