@@ -36,19 +36,7 @@ The sum of the two input energy vectors need not share a single Kerr seed across
 | Area inequality | `horizon_area_gap` |
 | Attainment and optimality of the coefficient | `schwarzschild_equality`, `optimal_gap_coefficient` |
 
-## Verify in Lean
-
-The project pins Lean 4.34.1 and mathlib commit `d13f23b723b8a846827a245b89c10fc7d3f11612`. With a Lean toolchain manager and Git installed, run the following from the repository root. The first setup retrieves dependencies. The commands also work in a PowerShell terminal.
-
-```sh
-lake exe cache get Mathlib.Tactic Mathlib.Analysis.SpecialFunctions.Arsinh Mathlib.Topology.Order.IntermediateValue
-lake build
-lake env lean Verify.lean
-lake env leanchecker --verbose STUHorizons
-```
-
-The Lean source establishes the real-variable inequality from the published stationary entropy formula. It also derives that formula in the physical-data coordinates from the boost parameterization. The physical identification of the formula as horizon area divided by four comes from the cited gravitational solution. The axiom audit lists only standard Lean foundations. [Formal proof](STUHorizons.lean) · [Audit declarations](Verify.lean) · [Verification transcript](verification.txt)
-
+The Lean source establishes the real-variable inequality from the published stationary entropy formula. It also derives that formula in the physical-data coordinates from the boost parameterization. 
 ## Sources and account antecedents
 
 - Cvetič, Gibbons, Lü and Pope give the physical parameters and entropy in equations (3.75)–(3.80), and pose the four-charge analytic problem in §6.2. The earlier Cvetič–Youm paper constructs the rotating solution in a duality frame. [2018 paper](https://doi.org/10.1103/PhysRevD.98.106015) · [1996 paper](https://doi.org/10.1103/PhysRevD.54.2612)
